@@ -1,0 +1,94 @@
+/* Base (Mobile-first) Styles */
+.account-container {
+  width: 90%;
+  max-width: 340px;
+  margin: 40px auto;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.account-title {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  background-color: #f3f4f6;
+}
+
+.profile-image-container {
+  position: relative;
+  margin-right: 12px;
+}
+
+.profile-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.camera-icon {
+  position: absolute;
+  left: 45px;
+  top: 30px;
+  background-color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b21a8;
+}
+
+.camera-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  color: #111827;
+}
+
+.email {
+  font-size: 12px;
+  margin: 2px 0 6px;
+  color: #6b7280;
+}
+
+.description {
+  font-size: 12px;
+  color: #333;
+}
+
+/* Larger Screens (Laptops and up) */
+@media (min-width: 768px) {
+  .account-container {
+    width: 340px;
+    margin: 60px auto;
+  }
+
+  .account-title {
+    padding: 20px;
+  }
+
+  .account-info {
+    padding: 20px;
+  }
+}
